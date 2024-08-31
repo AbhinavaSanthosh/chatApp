@@ -7,7 +7,7 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
     cors:{
-        origin:["http://chatapp-abhi.netlify.app", "https://chatapp-abhi.netlify.app"],
+        origin: "*",
         methods:['GET', 'POST'],
     },
 });
