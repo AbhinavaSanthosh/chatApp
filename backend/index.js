@@ -17,7 +17,7 @@ app.use(express.urlencoded({extended:true}));
 app.use(express.json()); 
 app.use(cookieParser());
 const corsOption={
-    origin: "*",
+    origin: ["http://chatapp-abhi.netlify.app", "https://chatapp-abhi.netlify.app"],
     credentials:true
 };
 app.use(cors(corsOption)); 
